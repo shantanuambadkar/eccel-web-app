@@ -1,0 +1,26 @@
+.footer-font {
+  font-size: 0.8rem;
+}
+
+.footer-alignment {
+  /* position: fixed; */
+  margin-top: 2dvh;
+  width: 100%;
+}
+
+.phone-img {
+  width: 16px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  font-size: 1.5rem;
+  animation: l1 1s linear infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes l1 {
+  to {
+    opacity: 0;
+  }
+}

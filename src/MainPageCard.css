@@ -1,0 +1,25 @@
+.card {
+  background-color: #757575 !important;
+  color: #fefefa !important;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out !important;
+  height: 40vh;
+  width: 20vw;
+  margin: 5vh;
+}
+
+.card:hover {
+  color: #757575 !important;
+  transform: scale(1.05) !important;
+  background-color: transparent !important;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.flex-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

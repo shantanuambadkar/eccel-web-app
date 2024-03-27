@@ -1,0 +1,83 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* ensure the popup appears above other content */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-image {
+  width: 100%;
+}
+
+.popup-content button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid-mar {
+  margin-bottom: 5vh;
+}
+
+/*Close Icon*/
+
+.closeBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeIcon {
+  width: 30%;
+  cursor: pointer;
+}
+
+.close-button {
+  transition: transform 0.3s ease;
+}
+.close-button:hover {
+  transform: rotate(90deg);
+}
+.danger-text {
+  color: red;
+  font-weight: bold;
+}
+
+/*Over writing MUI Fonts*/
+
+.MuiFormLabel-root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.MuiInputBase-root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+.MuiFormControl-root {
+  width: 100% !important;
+  margin: 0 0 2vh 5vh !important;
+}
