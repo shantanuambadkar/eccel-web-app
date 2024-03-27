@@ -72,10 +72,10 @@
 /*Over writing MUI Fonts*/
 
 .MuiFormLabel-root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: 'Nunito' /* Verdana, Geneva, Tahoma, sans-serif */ !important;
 }
 .MuiInputBase-root {
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: 'Nunito' /* Verdana, Geneva, Tahoma, sans-serif */ !important;
 }
 .MuiFormControl-root {
   width: 100% !important;
