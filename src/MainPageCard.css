@@ -26,10 +26,10 @@
     justify-content: center;
     align-items: center;
   }
-  .card-content-text {
-    margin-top: 10vh !important;
+  .card-context-text {
+    margin-top: 5vh !important;
   }
   .card-context-static {
-    margin-top: 20vh !important;
+    margin-top: 15vh !important;
   }
 }
