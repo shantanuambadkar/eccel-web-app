@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent } from '@mui/material';
 import './MainPageCard.css';
 import { useNavigate } from 'react-router-dom';
 
