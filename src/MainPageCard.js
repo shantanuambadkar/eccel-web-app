@@ -13,34 +13,27 @@ function MainPageCard() {
     <div className="flex-div">
       <Card className="card" /* onClick={cardClick} */>
         <CardContent className="card-content">
-          <Typography variant="h5" component="h2">
-            Metal Recycling
-          </Typography>
-          <br />
-          <Typography>
+          <h2>Metal Recycling</h2>
+          <span className="card-content-static">
             Buying, processing and selling of ferrous and non-ferrous recycled
             metals
-          </Typography>
+          </span>
         </CardContent>
       </Card>
       <Card className="card" onClick={handleVehicleScrapingClick}>
         <CardContent className="card-content">
-          <Typography variant="h5" component="h2">
-            Registered Vehicle Scrapping Facility (RVSF)
-          </Typography>
-          <br />
-          <Typography>
+          <h2>Registered Vehicle Scrapping Facility (RVSF)</h2>
+          <span className="card-content-text">
             West Bengal's First Government Licensed Vehicle Recycling Facility
-          </Typography>
+          </span>
         </CardContent>
       </Card>
       <Card className="card" /* onClick={cardClick} */>
         <CardContent className="card-content">
-          <Typography variant="h5" component="h2">
-            Trading
-          </Typography>
-          <br />
-          <Typography>Ferrous & Non-Ferrous Metals</Typography>
+          <h2>Trading</h2>
+          <span className="card-content-static">
+            Ferrous & Non-Ferrous Metals
+          </span>
         </CardContent>
       </Card>
     </div>

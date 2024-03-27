@@ -2,7 +2,7 @@
   background-color: #757575 !important;
   color: #fefefa !important;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out !important;
+  transition: transform 0.1s ease-in-out !important;
   margin: 5vh;
 }
 
@@ -25,5 +25,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .card-content-text {
+    margin-top: 10vh !important;
+  }
+  .card-context-static {
+    margin-top: 20vh !important;
   }
 }
