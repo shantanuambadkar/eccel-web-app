@@ -3,8 +3,6 @@
   color: #fefefa !important;
   cursor: pointer;
   transition: transform 0.3s ease-in-out !important;
-  height: 40vh;
-  width: 20vw;
   margin: 5vh;
 }
 
@@ -18,8 +16,14 @@
   text-align: center;
 }
 
-.flex-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (min-width: 1301px) {
+  .card {
+    height: 40vh;
+    width: 20vw;
+  }
+  .flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
