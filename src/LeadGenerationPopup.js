@@ -1,7 +1,7 @@
 import { Button, Grid, TextField } from '@material-ui/core';
 import './App.css';
+import './index.css';
 import './LeadGenerationPopup.css';
-import formImage from './images/LeadGenForm.png';
 import closeIcon from './images/icons8-close-128.png';
 import { useState } from 'react';
 /* import nodemailer from 'nodemailer'; */
@@ -78,10 +78,12 @@ function LeadGenerationPopup({ showHide }) {
       <div className="popup-content">
         <form id="registrationForm" onSubmit={submitRegistrationForm}>
           <Grid container>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={3} className="closeBtnDiv">
+            <Grid className='center-text' item xs={9}>
+              <h3>Eccel Recycling Private Limited (ERPL)</h3>
+            </Grid>
+            {/* <Grid item xs={3}></Grid> */}
+            <Grid item xs={2}></Grid>
+            <Grid item xs={1} className="closeBtnDiv">
               <img
                 src={closeIcon}
                 alt="Close Icon"
@@ -91,24 +93,13 @@ function LeadGenerationPopup({ showHide }) {
             </Grid>
           </Grid>
           <Grid container className="grid-mar">
-            <Grid item xs={5}>
-              <img
-                src={formImage}
-                className="form-image"
-                alt="Casual man pointing to a form"
-              />
-            </Grid>
-            <Grid item xs={7}>
-              <Grid container>
-                <Grid item xs={9}>
+          <Grid item xs={9}>
                   <TextField
                     required
                     label="Name"
                     inputProps={{ id: 'custName', name: 'custName' }}
                   />
                 </Grid>
-              </Grid>
-              <Grid container>
                 <Grid item xs={9}>
                   <TextField
                     required
@@ -116,8 +107,6 @@ function LeadGenerationPopup({ showHide }) {
                     inputProps={{ id: 'custEmail', name: 'custEmail' }}
                   />
                 </Grid>
-              </Grid>
-              <Grid container>
                 <Grid item xs={9}>
                   <TextField
                     required
@@ -130,18 +119,14 @@ function LeadGenerationPopup({ showHide }) {
                         .slice(0, 10);
                     }}
                   />
-                </Grid>
               </Grid>
-              <Grid container>
-                <Grid item xs={9}>
+              <Grid item xs={9}>
                   <TextField
                     required
                     label="Vehicle Number"
                     inputProps={{ id: 'custVehicleNo', name: 'custVehicleNo' }}
                   />
                 </Grid>
-              </Grid>
-              <Grid container>
                 <Grid item xs={9}>
                   <TextField
                     required
@@ -149,16 +134,16 @@ function LeadGenerationPopup({ showHide }) {
                     inputProps={{ id: 'custLocation', name: 'custLocation' }}
                   />
                 </Grid>
-              </Grid>
               {isError && (
                 <Grid item xs={9} id="error-grid" className="danger-text">
                   Your details are invalid
                 </Grid>
               )}
-            </Grid>
           </Grid>
           <Grid container>
-            <Grid item xs={12}>
+            <Grid item xs={5}>
+            </Grid>
+            <Grid item xs={7}>
               <Button type="Submit">Submit</Button>
             </Grid>
           </Grid>

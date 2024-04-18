@@ -1,4 +1,5 @@
 import './Footer.css';
+import './index.css';
 import { useState } from 'react';
 import LeadGenerationPopup from './LeadGenerationPopup';
 import linkedInLogo from './images/siteDisplay/linkedin-logo.webp';
@@ -19,7 +20,7 @@ function Footer() {
         <div className="footer-alignment">
           <div>
             <div className="loader" onClick={handleLeadPopup}>
-              Contact Us
+              <h1 className='heading-primary'>Contact Us</h1>
             </div>
           </div>
           <div className="footer-font">

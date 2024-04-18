@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Nunito' /* Verdana, Geneva, Tahoma, sans-serif */ !important;
+  /* font-family: 'Nunito' !important; */
+  font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fff !important;
@@ -11,7 +15,15 @@ body {
 }
 
 code {
-  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace; */
-  font-family: 'Nunito' /* Verdana, Geneva, Tahoma, sans-serif */ !important;
+  font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+
+.heading-primary{
+  text-align: center;
+  font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.center-text{
+  text-align: center;
 }

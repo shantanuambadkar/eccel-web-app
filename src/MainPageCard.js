@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@mui/material';
 import './MainPageCard.css';
+import './index.css';
 import { useNavigate } from 'react-router-dom';
 
 function MainPageCard() {
@@ -11,7 +12,7 @@ function MainPageCard() {
 
   return (
     <div>
-      <h1 className="our-business-h2 card-content">Our Businesses</h1>
+      <h1 className="heading-primary">Our Businesses</h1>
       <div className="flex-div">
         <Card className="card card-width card1-ht" /* onClick={cardClick} */>
           <CardContent className="card-content">
