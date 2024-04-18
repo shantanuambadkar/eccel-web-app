@@ -2,3 +2,17 @@
   font-family: 'Nunito' !important;
   font-size: 1.5rem !important;
 }
+
+@media (max-width: 600px) {
+  /* Adjust styles for screens smaller than 600px (typical mobile devices) */
+  .main-page-menu {
+    flex-wrap: wrap; /* Allow tabs to wrap */
+    justify-content: center; /* Center tabs */
+  }
+
+  .main-page-menu button {
+    flex: 0 0 auto; /* Allow tabs to shrink and grow */
+    width: auto; /* Set width to auto to adjust according to content */
+    margin: 5px; /* Add some margin between tabs */
+  }
+}

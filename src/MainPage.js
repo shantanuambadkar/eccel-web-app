@@ -9,6 +9,7 @@ import Sustainability from './Sustainability';
 import Carousel from './Carousel';
 import HeaderMainPage from './HeaderMainPage';
 import MainPageMenu from './MainPageMenu';
+import AboutUs from './AboutUs';
 
 function MainPage() {
   return (
@@ -22,6 +23,7 @@ function MainPage() {
         </Grid>
       </Grid>
       <Carousel />
+      <AboutUs />
       {/* <div className="mainpage-slide-container">
         <div className="mainpage-image-container">
           <img className="mainPageImg" src={carWithSky} alt="Car with Sky" />

@@ -13,6 +13,7 @@ function MainPageMenu() {
     <Tabs
       onChange={(event, newValue) => handleChange(event, newValue)}
       centered
+      className="main-page-menu"
     >
       <Tab value="0" label="About Us" />
       <Tab value="1" label="Our Businesses" />
