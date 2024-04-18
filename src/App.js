@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import LeadGenerationPopup from './LeadGenerationPopup';
+import RVSFHome from './rvsf/RVSFHome';
 
 function App() {
   const [showPopup, setShowPopup] = useState(true);
@@ -12,9 +13,7 @@ function App() {
   return (
     <div className="App">
       <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
-      <div>
-        <span>RVSF Home</span>
-      </div>
+      <RVSFHome />
     </div>
   );
 }

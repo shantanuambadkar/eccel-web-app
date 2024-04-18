@@ -1,0 +1,37 @@
+.flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+.left-aligned-list {
+  text-align: left !important;
+}
+
+.text-overlay2 {
+  /*  position: absolute;
+  left: 50%; */ /* Start off-screen on the right */
+  /* transform: translate(-50%, -50%); */
+  /* background-color: rgba(0, 0, 0, 0.5); */ /* Background color with 50% opacity */
+  padding: 5vh; /* Adjust as needed */
+  /* color: white; */ /* Text color */
+  /* animation: slideIn 2s forwards; */ /* Animation duration and fill mode */
+  /* width: 80%; */
+  /* margin-left: 10%; */
+}
+
+@keyframes slideIn {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 50%; /* Move to the center */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay2 {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}

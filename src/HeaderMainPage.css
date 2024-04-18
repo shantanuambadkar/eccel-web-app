@@ -1,0 +1,10 @@
+.logoImg {
+  width: 100%;
+  /* margin-bottom: 1dvh; */
+}
+
+@media screen and (min-width: 768px) {
+  .containerMargin {
+    margin: 5dvh;
+  }
+}

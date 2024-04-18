@@ -1,13 +1,13 @@
 .card {
-  background-color: #757575 !important;
+  background-color: #5981af !important;
   color: #fefefa !important;
   cursor: pointer;
-  transition: transform 0.1s ease-in-out !important;
+  transition: transform 0.3s ease-in-out !important;
   margin: 5vh;
 }
 
 .card:hover {
-  color: #757575 !important;
+  color: #5981af !important;
   transform: scale(1.05) !important;
   background-color: transparent !important;
 }
@@ -16,20 +16,37 @@
   text-align: center;
 }
 
+.our-business-h2 {
+  margin-bottom: 0 !important;
+}
+
+.MuiCardContent-root {
+  padding: 0 !important;
+}
+
 @media only screen and (min-width: 1301px) {
-  .card {
-    height: 40vh;
+  .card-width {
     width: 20vw;
   }
+  .card1-ht {
+    height: 30vh;
+  }
+  .card2-ht {
+    height: 30vh;
+  }
+  .card3-ht {
+    height: 30vh;
+  }
+
   .flex-div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .card-context-text {
+  /* .card-context-text {
+    margin-top: 2vh !important;
+  } */
+  /* .card-context-static {
     margin-top: 5vh !important;
-  }
-  .card-context-static {
-    margin-top: 15vh !important;
-  }
+  } */
 }

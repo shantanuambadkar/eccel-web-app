@@ -1,8 +1,60 @@
-.center-aligned {
-  text-align: center;
-  margin: 2vh;
+.center-aligned-flex-div {
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-direction: row; */
 }
 
 .margin-after-header {
-  margin-top: 10vh;
+  margin-top: 2px;
+}
+
+.mainPageImg {
+  width: 95%;
+  opacity: 50%;
+}
+
+.mainpage-slide-container {
+  position: relative;
+}
+
+.mainpage-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Start off-screen on the right */
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with 50% opacity */
+  padding: 2vh; /* Adjust as needed */
+  color: white; /* Text color */
+  animation: slideIn 2s forwards; /* Animation duration and fill mode */
+  width: 80%;
+}
+
+.animate-on-scroll {
+  animation: slideIn 5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    left: 0%; /* Start off-screen on the right */
+  }
+  100% {
+    left: 50%; /* Move to the center */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-overlay {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
 }

@@ -1,8 +1,7 @@
 import './Footer.css';
-import contactImg from './images/icons8-contact-us-16.png';
-import phoneImg from './images/icons8-phone-94.png';
 import { useState } from 'react';
 import LeadGenerationPopup from './LeadGenerationPopup';
+import linkedInLogo from './images/siteDisplay/linkedin-logo.webp';
 
 function Footer() {
   const [showPopup, setShowPopup] = useState(false);
@@ -14,27 +13,46 @@ function Footer() {
     setShowPopup(true);
   }
   return (
-    <div>
-      <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
-      <div className="footer-alignment">
-        <div>
-          <div className="loader" onClick={handleLeadPopup}>
-            Contact Us
+    <div className="center-aligned-text">
+      <div>
+        <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
+        <div className="footer-alignment">
+          <div>
+            <div className="loader" onClick={handleLeadPopup}>
+              Contact Us
+            </div>
+          </div>
+          <div className="footer-font">
+            <div>
+              <a
+                href="tel:+913346044066"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +913346044066
+              </a>{' '}
+              /{' '}
+              <a
+                href="https://wa.me/+919147182882"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                +919147182882
+              </a>
+            </div>
+            <div>
+              6/2 Moira Street, Fourth Floor, Kolkata 700017, West Bengal,
+              India.
+            </div>
           </div>
         </div>
-        <div className="footer-font">
-          <div>
-            <img
-              className="phone-img"
-              src={phoneImg}
-              alt="Blue color telephone receiver"
-            />
-            +033 46044066 / +91 471 828 82
-          </div>
-          <div>
-            <img src={contactImg} alt="Office building with contact card" />
-            6/2 Moira Street, Fourth Floor, Kolkata 700017, West Bengal, India.
-          </div>
+        <div className="main-div">
+          <img
+            className="linkedInLogo pointerCursor"
+            src={linkedInLogo}
+            alt="LinkedIn"
+          />
+          <p>Copyright © 2024 ERPL. All Rights Reserved.</p>
         </div>
       </div>
     </div>

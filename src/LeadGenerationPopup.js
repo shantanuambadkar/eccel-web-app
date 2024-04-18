@@ -4,13 +4,14 @@ import './LeadGenerationPopup.css';
 import formImage from './images/LeadGenForm.png';
 import closeIcon from './images/icons8-close-128.png';
 import { useState } from 'react';
-import axios from 'axios';
+/* import nodemailer from 'nodemailer'; */
 
 function LeadGenerationPopup({ showHide }) {
+  /* const sendEmail = useEmailSender(); */
   const [isError, setIsError] = useState(false);
 
   let formObject = {};
-  function submitRegistrationForm(e) {
+  async function submitRegistrationForm(e) {
     e.preventDefault();
     let formData = new FormData(e.target);
     formObject = Object.fromEntries(formData);
@@ -25,27 +26,52 @@ function LeadGenerationPopup({ showHide }) {
         formObject.custVehicleNo &&
         formObject.custVehicleNo !== '' &&
         formObject.custLocation &&
-        formObject.custLocation !== ''
+        formObject.custLocation !== '' &&
+        formObject.custEmail &&
+        formObject.custEmail !== ''
       ) {
+        /* sendEmail(formObject); */
         setIsError(false);
-        sendEmail(JSON.stringify(formObject));
       } else {
         setIsError(true);
       }
     }
   }
 
-  async function sendEmail(body) {
-    console.log('body', body);
-    try {
-      await axios.post('/send-email', formObject);
-      alert('Email sent successfully');
-      /* setFormData({ name: '', email: '', message: '' }); */
-    } catch (error) {
-      console.error('Error sending email: ', error);
-      alert('Failed to send email');
-    }
-  }
+  /* function useEmailSender() {
+    const sendEmail = async (body) => {
+      const { custEmail } = body;
+      const [email, setEmail] = useState(custEmail);
+      const [subject, setSubject] = useState('New Lead');
+      const [message, setMessage] = useState('Hi, New lead is on the way');
+
+      try {
+        const transporter = nodemailer.createTransport({
+          service: 'gmail',
+          auth: {
+            user: 'shantanuambadkar@gmail.com',
+            pass: '',
+          },
+        });
+
+        const mailOptions = {
+          from: 'shantanuambadkar@gmail.com',
+          to: email,
+          subject: subject,
+          text: message,
+        };
+
+        await transporter.sendMail(mailOptions);
+        console.log('Email sent successfully!');
+      } catch (error) {
+        console.error('Error sending email:', error);
+        console.log('Failed to send email. Please try again later.');
+      }
+    };
+
+    // Return the function that sends email
+    return sendEmail;
+  } */
 
   return (
     <div className="popup">
@@ -85,6 +111,7 @@ function LeadGenerationPopup({ showHide }) {
               <Grid container>
                 <Grid item xs={9}>
                   <TextField
+                    required
                     label="Email"
                     inputProps={{ id: 'custEmail', name: 'custEmail' }}
                   />

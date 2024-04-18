@@ -1,0 +1,24 @@
+.fixed-height-container {
+  height: 100vh;
+  width: 80vw;
+  overflow: hidden;
+}
+
+.carouselImg {
+  width: 90%;
+  height: 90%;
+  /* object-fit: contain; */
+  margin-right: 2vh;
+}
+.innerDiv {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh;
+}
+
+.carousel-conatiner-div {
+  margin-top: 5vh;
+  margin-left: 10vh;
+  width: 90%;
+}
