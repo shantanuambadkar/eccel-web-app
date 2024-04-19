@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer-alignment">
           <div>
             <div onClick={handleLeadPopup}>
-              <h1 className='heading-primary'>Contact Us</h1>
+              <h1 className='pointer heading-primary'>Contact Us</h1>
             </div>
           </div>
           <div className="footer-font">

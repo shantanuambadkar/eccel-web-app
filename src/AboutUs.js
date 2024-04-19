@@ -3,7 +3,7 @@ import './index.css';
 function AboutUs() {
   return (
     <div className="centre-text">
-      <h1 className="heading-primary">About Us</h1>
+      <h1 className="header-margin heading-primary">About Us</h1>
       <p>
         Eccel Recycling Private Limited (ERPL) is a leading ferrous and
         non-ferrous metals company headquartered in Kolkata, West Bengal.

@@ -1,8 +1,9 @@
-import React from 'react';
+import React/* , {lazy, Suspense} */ from 'react';
 import { Grid } from '@material-ui/core';
 import './App.css';
 import './index.css';
 import './MainPage.css';
+/* const Carousel = lazy(() => import('./Carousel')); */
 import Footer from './Footer';
 import MainPageCard from './MainPageCard';
 import Sustainability from './Sustainability';
@@ -22,7 +23,9 @@ function MainPage() {
           <MainPageMenu />
         </Grid>
       </Grid>
-      <Carousel />
+      {/* <Suspense fallback={<div className='loader-container'><div class="loader"></div></div>}> */}
+        <Carousel />
+     {/*  </Suspense> */}
       <AboutUs />
       {/* <div className="mainpage-slide-container">
         <div className="mainpage-image-container">

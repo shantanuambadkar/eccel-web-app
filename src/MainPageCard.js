@@ -12,7 +12,7 @@ function MainPageCard() {
 
   return (
     <div>
-      <h1 className="heading-primary">Our Businesses</h1>
+      <h1 className="header-margin heading-primary">Our Businesses</h1>
       <div className="flex-div">
         <Card className="card card-width card1-ht" /* onClick={cardClick} */>
           <CardContent className="card-content">

@@ -14,6 +14,11 @@ body {
   color: #757575 !important;
 }
 
+a {
+  color: #757575 !important;
+  text-decoration: none;
+}
+
 code {
   font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
@@ -23,9 +28,16 @@ code {
   text-align: center;
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+.header-margin{
+  margin: 10dvh;
+}
 
 .center-text{
   text-align: center;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 
