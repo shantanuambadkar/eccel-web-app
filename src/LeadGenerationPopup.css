@@ -64,6 +64,9 @@
   color: red;
   font-weight: bold;
 }
+.error-text{
+  margin-left: 5vh;
+}
 
 /*Over writing MUI Fonts*/
 

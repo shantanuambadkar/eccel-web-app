@@ -93,52 +93,50 @@ function LeadGenerationPopup({ showHide }) {
             </Grid>
           </Grid>
           <Grid container className="grid-mar">
-          <Grid item xs={9}>
-                  <TextField
-                    required
-                    label="Name"
-                    inputProps={{ id: 'custName', name: 'custName' }}
-                  />
-                </Grid>
-                <Grid item xs={9}>
-                  <TextField
-                    required
-                    label="Email"
-                    inputProps={{ id: 'custEmail', name: 'custEmail' }}
-                  />
-                </Grid>
-                <Grid item xs={9}>
-                  <TextField
-                    required
-                    type="number"
-                    label="Mobile"
-                    inputProps={{ id: 'custMobile', name: 'custMobile' }}
-                    onInput={(e) => {
-                      e.target.value = Math.max(0, parseInt(e.target.value))
-                        .toString()
-                        .slice(0, 10);
-                    }}
-                  />
-              </Grid>
-              <Grid item xs={9}>
-                  <TextField
-                    required
-                    label="Vehicle Number"
-                    inputProps={{ id: 'custVehicleNo', name: 'custVehicleNo' }}
-                  />
-                </Grid>
-                <Grid item xs={9}>
-                  <TextField
-                    required
-                    label="Location"
-                    inputProps={{ id: 'custLocation', name: 'custLocation' }}
-                  />
-                </Grid>
-              {isError && (
-                <Grid item xs={9} id="error-grid" className="danger-text">
-                  Your details are invalid
-                </Grid>
-              )}
+            <Grid item xs={9}>
+              <TextField
+                required
+                label="Name"
+                inputProps={{ id: 'custName', name: 'custName' }}
+              />
+            </Grid>
+            <Grid item xs={9}>
+                <TextField
+                  required
+                  label="Email"
+                  inputProps={{ id: 'custEmail', name: 'custEmail' }}
+                />
+            </Grid>
+            <Grid item xs={9}>
+                <TextField
+                  required
+                  type="number"
+                  label="Mobile"
+                  inputProps={{ id: 'custMobile', name: 'custMobile' }}
+                  onInput={(e) => {
+                    e.target.value = Math.max(0, parseInt(e.target.value))
+                      .toString()
+                      .slice(0, 10);
+                  }}
+                />
+            </Grid>
+            <Grid item xs={9}>
+                <TextField
+                  required
+                  label="Vehicle Number"
+                  inputProps={{ id: 'custVehicleNo', name: 'custVehicleNo' }}
+                />
+            </Grid>
+            <Grid item xs={9}>
+                <TextField
+                  required
+                  label="Location"
+                  inputProps={{ id: 'custLocation', name: 'custLocation' }}
+                />
+            </Grid>
+						<Grid item xs={9} id="error-grid" className="danger-text">
+							{isError && <span className='error-text'>Some of your details are invalid. Please try again</span>}
+						</Grid>
           </Grid>
           <Grid container>
             <Grid item xs={5}>
