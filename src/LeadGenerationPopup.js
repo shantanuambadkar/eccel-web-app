@@ -134,8 +134,8 @@ function LeadGenerationPopup({ showHide }) {
                   inputProps={{ id: 'custLocation', name: 'custLocation' }}
                 />
             </Grid>
-						<Grid item xs={9} id="error-grid" className="danger-text">
-							{isError && <span className='error-text'>Some of your details are invalid. Please try again</span>}
+						<Grid item xs={9}>
+							{isError && <span className='error-text danger-text'>Some of your details are invalid. Please try again</span>}
 						</Grid>
           </Grid>
           <Grid container>
