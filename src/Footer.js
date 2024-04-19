@@ -19,7 +19,7 @@ function Footer() {
         <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
         <div className="footer-alignment">
           <div>
-            <div className="loader" onClick={handleLeadPopup}>
+            <div onClick={handleLeadPopup}>
               <h1 className='heading-primary'>Contact Us</h1>
             </div>
           </div>

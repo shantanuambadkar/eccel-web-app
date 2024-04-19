@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className='loader-container'><div class="loader"></div></div>}>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/rvsf" element={<AppPage />} />
