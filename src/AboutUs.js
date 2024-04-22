@@ -1,8 +1,9 @@
 import './AboutUs.css';
 import './index.css';
+
 function AboutUs() {
   return (
-    <div className="centre-text">
+    <div id="aboutUs" className="centre-text">
       <h1 className="header-margin heading-primary">About Us</h1>
       <p>
         Eccel Recycling Private Limited (ERPL) is a leading ferrous and

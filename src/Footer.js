@@ -13,8 +13,16 @@ function Footer() {
   function handleLeadPopup() {
     setShowPopup(true);
   }
+
+  const companyName = "Eccel Exports Private Limited";
+  const handleButtonClick = () => {
+    const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(companyName)}`;
+    window.open(googleMapsUrl, '_blank');
+  };
+
+
   return (
-    <div className="center-aligned-text">
+    <div id="contactUs" className="center-aligned-text">
       <div>
         <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
         <div className="footer-alignment">
@@ -42,8 +50,10 @@ function Footer() {
               </a>
             </div>
             <div>
-              6/2 Moira Street, Fourth Floor, Kolkata 700017, West Bengal,
-              India.
+              <span className='pointer' onClick={handleButtonClick}>
+                6/2 Moira Street, Fourth Floor, Kolkata 700017, West Bengal,
+                India.
+              </span>
             </div>
           </div>
         </div>

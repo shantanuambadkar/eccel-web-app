@@ -11,7 +11,7 @@ function MainPageCard() {
   }
 
   return (
-    <div>
+    <div id="ourBusiness">
       <h1 className="header-margin heading-primary">Our Businesses</h1>
       <div className="flex-div">
         <Card className="card card-width card1-ht" /* onClick={cardClick} */>

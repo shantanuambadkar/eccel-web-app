@@ -1,8 +1,9 @@
 import './Sustainability.css';
+import { List } from '@material-ui/core';
 
 function Sustainability() {
   return (
-    <div className="text-overlay2">
+    <div id="sustainability" className="text-overlay2">
       <div className="flex-box">
         <h2>Environmental Stewardship</h2>
       </div>
@@ -20,7 +21,7 @@ function Sustainability() {
           <h2>Some Facts</h2>
         </div>
         <div className="left-aligned-list">
-          <list>
+          <List>
             <ol>
               <li>
                 Almost 40% of the world's steel production is made from scrap.
@@ -54,7 +55,7 @@ function Sustainability() {
                 steel.
               </li>
             </ol>
-          </list>
+          </List>
         </div>
       </div>
     </div>
