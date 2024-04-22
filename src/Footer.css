@@ -1,10 +1,8 @@
 .footer-font {
-  font-size: 0.8rem;
+  font-size: 0.99rem;
 }
 
 .footer-alignment {
-  /* position: fixed; */
-  /* margin-bottom: 2dvh; */
   width: 100%;
   position: relative;
   bottom: 2dvh;
@@ -14,22 +12,15 @@
 
 .animate-on-scroll {
   position: absolute;
-  left: 50%; /* Start off-screen on the right */
+  left: 50%; 
   transform: translate(-50%, -50%);
-  animation: slideIn 2s forwards; /* Animation duration and fill mode */
-}
-/* HTML: <div class="loader"></div> */
-.loader {
-  font-size: 1.5rem;
-  /* animation: l1 1s linear infinite alternate; */
-  cursor: pointer;
+  animation: slideIn 2s forwards;
 }
 
-/* @keyframes l1 {
-  to {
-    opacity: 0;
-  }
-} */
+.loader {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 .main-div {
   height: 20dvh;
