@@ -29,7 +29,7 @@ code {
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 .header-margin{
-  margin: 10dvh;
+  margin-top: 20dvh;
 }
 
 .center-text{
@@ -39,7 +39,6 @@ code {
 .pointer{
   cursor: pointer;
 }
-
 
 /* HTML: <div class="loader"></div> */
 .loader-container{

@@ -5,7 +5,7 @@ function AboutUs() {
   return (
     <div id="aboutUs" className="centre-text">
       <h1 className="header-margin heading-primary">About Us</h1>
-      <p>
+      <p className='p-tag-margin'>
         Eccel Recycling Private Limited (ERPL) is a leading ferrous and
         non-ferrous metals company headquartered in Kolkata, West Bengal.
         Incorporated in 2018, ERPL operates in three independent business

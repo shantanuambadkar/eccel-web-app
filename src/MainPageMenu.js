@@ -1,3 +1,4 @@
+import React from 'react';
 import { Tab, Tabs } from '@material-ui/core';
 import './MainPageMenu.css';
 

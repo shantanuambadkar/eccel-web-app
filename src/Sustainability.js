@@ -1,9 +1,11 @@
 import './Sustainability.css';
+import './index.css'
 import { List } from '@material-ui/core';
 
 function Sustainability() {
   return (
     <div id="sustainability" className="text-overlay2">
+      <h1 className="header-margin heading-primary">Sustainability</h1>
       <div className="flex-box">
         <h2>Environmental Stewardship</h2>
       </div>
