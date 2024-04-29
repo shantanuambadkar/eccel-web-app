@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
 .MuiTab-root {
-  font-family: 'Nunito' !important;
+  font-family: "Overpass","Helvetica Neue",Helvetica,Arial,sans-serif !important;
   font-size: 1.5rem !important;
 }
 

@@ -78,11 +78,11 @@ function LeadGenerationPopup({ showHide }) {
       <div className="popup-content">
         <form id="registrationForm" onSubmit={submitRegistrationForm}>
           <Grid container>
-            <Grid className='center-text' item xs={9}>
-              <h3>Eccel Recycling Private Limited (ERPL)</h3>
+            <Grid className='center-text' item xs={11}>
+              <h3>Get in touch with Us</h3>
             </Grid>
             {/* <Grid item xs={3}></Grid> */}
-            <Grid item xs={2}></Grid>
+            {/* <Grid item xs={2}></Grid> */}
             <Grid item xs={1} className="closeBtnDiv">
               <img
                 src={closeIcon}
@@ -134,7 +134,7 @@ function LeadGenerationPopup({ showHide }) {
                   inputProps={{ id: 'custLocation', name: 'custLocation' }}
                 />
             </Grid>
-						<Grid item xs={9}>
+						<Grid item xs={12}>
 							{isError && <span className='error-text danger-text'>Some of your details are invalid. Please try again</span>}
 						</Grid>
           </Grid>

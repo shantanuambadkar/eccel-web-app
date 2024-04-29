@@ -24,18 +24,22 @@
   padding: 0 !important;
 }
 
+.span-padding{
+  padding: 2dvh;
+}
+
 @media only screen and (min-width: 1301px) {
   .card-width {
-    width: 20vw;
+    width: 20dvw;
   }
   .card1-ht {
-    height: 30vh;
+    height: 30dvh;
   }
   .card2-ht {
-    height: 30vh;
+    height: 30dvh;
   }
   .card3-ht {
-    height: 30vh;
+    height: 30dvh;
   }
 
   .flex-div {

@@ -11,7 +11,7 @@ body {
   font-size: 1.2rem;
 }
 
-a{
+a {
   color: #757575 !important;
   text-decoration: none;
 }
@@ -20,10 +20,16 @@ code {
   font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 
+h1 {
+  font-weight: lighter !important;
+}
+
 .heading-primary{
   text-align: center;
   font-family: "Overpass", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
+
+
 .header-margin{
   margin-top: 20dvh;
 }
