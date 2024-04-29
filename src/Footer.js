@@ -13,7 +13,7 @@ function Footer() {
             src={linkedInLogo}
             alt="LinkedIn"
           />
-          <p className='footer-font'>Copyright © 2024 ERPL. All Rights Reserved.</p>
+          <p className='copyright-font'>Copyright © 2024 ERPL. All Rights Reserved.</p>
         </div>
       </div>
     </div>
