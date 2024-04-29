@@ -8,7 +8,7 @@ import { Grid } from '@mui/material';
 
 export default function ContactUs(){
 
-    const [showPopup, setShowPopup] = useState(false);
+    const [showPopup, setShowPopup] = useState(true);
     const companyName = "Eccel Exports Private Limited";
 
     /* const imageUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(companyName)}&zoom=12&size=600x600&key=AIzaSyBFtCHKaHsZ65qFW-Tx4reAz_qQS8rE2S0`; */
