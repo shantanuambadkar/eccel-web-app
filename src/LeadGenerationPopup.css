@@ -49,7 +49,7 @@
 }
 
 .closeIcon {
-  width: 90%;
+  width: 95%;
   height: 60%;
   cursor: pointer;
 }
@@ -71,10 +71,10 @@
 /*Over writing MUI Fonts*/
 
 .MuiFormLabel-root {
-  font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-family: "Overpass","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 .MuiInputBase-root {
-  font-family: "Archivo","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-family: "Overpass","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }
 .MuiFormControl-root {
   width: 100% !important;
@@ -87,4 +87,8 @@
   .popup-content{
     width: 35%;
   }
+}
+
+h3{
+  font-family: "Overpass","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 }

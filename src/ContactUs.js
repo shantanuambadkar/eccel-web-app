@@ -31,7 +31,6 @@ export default function ContactUs(){
                 <HeaderMainPage/>
             </Grid>
         </Grid>
-        
         <div>{showPopup && <LeadGenerationPopup showHide={togglePopup} />}</div>
         <div className="footer-alignment">
           <div>

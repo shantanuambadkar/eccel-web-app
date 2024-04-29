@@ -1,4 +1,6 @@
 import { Tab, Tabs } from '@material-ui/core';
+import { Grid } from '@mui/material';
+import HeaderMainPage from '../HeaderMainPage';
 
 function RVSFHome() {
   function handleChange(event, newValue) {
@@ -10,14 +12,21 @@ function RVSFHome() {
     }
   }
   return (
-    <Tabs
-      onChange={(event, newValue) => handleChange(event, newValue)}
-      centered
-    >
-      <Tab value="0" label="Item One" />
-      <Tab value="1" label="Item Two" />
-      <Tab value="2" label="Item Three" />
-    </Tabs>
+    <Grid>
+      <Grid container>
+          <Grid item xs={2}>
+              <HeaderMainPage/>
+          </Grid>
+      </Grid>
+        <Tabs
+          onChange={(event, newValue) => handleChange(event, newValue)}
+          centered
+        >
+          <Tab value="0" label="Item One" />
+          <Tab value="1" label="Item Two" />
+          <Tab value="2" label="Item Three" />
+        </Tabs>
+    </Grid>
   );
 }
 
